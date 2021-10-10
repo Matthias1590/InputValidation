@@ -16,7 +16,7 @@ pip install inputvalidation
 import inputvalidation as iv
 ```
 
-After you imported the inputvalidation module you're ready to go.
+After you imported the inputvalidation module you're ready to use validators in your python program.
 
 ```python
 # Simple int validator
