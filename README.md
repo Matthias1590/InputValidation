@@ -33,7 +33,7 @@ phoneNumber = phoneValidator.input("Enter a phone number: ")
 print("\nPhone number:", phoneNumber)
 ```
 
-Here's what happens when you run the previous code block.
+Here's what happens when you run the previous code block (if you want to clear the screen everytime the user enters an invalid value, you can do so by setting the clearScreen keyword argument to True when creating a validator).
 
 ```
 Enter a phone number: 23980983
