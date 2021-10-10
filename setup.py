@@ -7,7 +7,7 @@ def readme():
 
 setup(
     name="inputvalidation",
-    version="1.1.3",
+    version="1.1.4",
     description="A python module to validate input.",
     long_description=readme(),
     long_description_content_type="text/markdown",

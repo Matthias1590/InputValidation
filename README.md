@@ -33,7 +33,7 @@ phoneNumber = phoneValidator.input("Enter a phone number: ")
 print("\nPhone number:", phoneNumber)
 ```
 
-Here's what happens when you run the previous code block (if you want to clear the screen everytime the user enters an invalid value, you can do so by setting the clearScreen keyword argument to True when creating a validator).
+Here's what happens when you run the previous code block.
 
 ```
 Enter a phone number: 23980983
@@ -88,4 +88,12 @@ Heres a validator that turns user input into a boolean (the "type" lambda turns 
 
 ```python
 boolValidator = iv.MultipleChoice(type=lambda inp: inp == "true", options=["true", "false"], caseSensitive=False)
+userInput = boolValidator.input("(true/false): ")
+```
+
+The previous block of code is basically a better version of this (the "type" lambda will be called everytime the input method is called, while the next block of code runs the equality check manually, you'd have to do this everytime you call the input method, this is why using the "type" keyword argument is better).
+
+```python
+boolValidator = iv.MultipleChoice(options=["true", "false"], caseSensitive=False)
+userInput = boolValidator.input("(true/false): ") == "true"
 ```
