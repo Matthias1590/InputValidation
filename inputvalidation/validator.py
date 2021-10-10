@@ -5,10 +5,10 @@ import os
 from typing import Any, Callable, Optional, Type
 
 
-if os.name == "posix":
+if os.name == "nt":
     def clearScreen():
-        os.system("clear")
-elif os.name == "nt":
+        os.system("cls")
+else:
     def clearScreen():
         os.system("cls")
 
